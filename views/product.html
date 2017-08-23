@@ -1,0 +1,20 @@
+<div id="product">
+	<div class = 'product-detail'>
+		<div>
+			<img ng-src = '{{product.imagefile}}' alt="">
+		</div>
+		<div>
+			<p>{{product.description}}</p><br><br><br>
+			<p>
+				<span class = 'number-choose' ng-click = 'productNumAdd()'>+</span>
+				<input type="text" class = 'number-input' readonly ng-model = 'num' ng-change = 'numChange'>
+				<span class = 'number-choose' ng-click = 'productNumSub()'>-</span>
+			</p><br><br><br><br>
+			<p class = 'intoCart' ng-click = 'intoCart()' ng-show = 'num'>加入购物车</p>
+		</div>
+	</div>
+		<div class="clear"></div>
+	<div>
+		<button class = 'intoCart' ng-click = 'setLink("cart")'>去结算</button>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<div id="order">
+	<div>
+		<ul>
+			<h2 ng-show = 'orders.length == 0'>您还未下过订单</h2>
+			<li ng-repeat = 'order in orders'>
+				<h1 class = 'order-history-bottom' ng-hide = 'order.items.length == 0'>#{{$index + 1}}</h1>
+				<ul class = 'order-history'>
+					<li ng-repeat = 'item in order.items'>
+						<img ng-src = '{{item.product[0].imagefile}}' alt="" ng-click = 'setLink("product")'>
+						<span>fdsf</span>
+						<span>{{item.number}}</span>
+						<div>配送中</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+</div>
+
+
+

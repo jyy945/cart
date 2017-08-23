@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JY商城</title>
+	<link rel="stylesheet" href="/public/css/demo.css">
+	<script src = 'https://cdn.bootcss.com/angular.js/1.0.8/angular.min.js'></script>
+	<script src = '/public/js/app.js'></script>
+</head>
+<body ng-app = 'app'>
+	<div ng-controller = 'ctrl'>
+		<h1 id = 'header'>手机商城
+			<div id = 'operate'>
+				<span id = 'products_area' ng-click = 'setLink("products")'>商品区</span>
+				<span id = 'products_cart' ng-click = 'setLink("cart")'>购物车</span>
+			</div>
+		</h1>
+		<div id="content">
+			<div ng-include = 'content'></div>
+		</div>
+	</div>
+</body>
+</html>

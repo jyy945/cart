@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin : 0;
+}
+ul li{
+	list-style-type: none;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.margin-top-20{
+	margin-top: 20px;
+}
+#header{
+	height: 50px;
+	background: #09f;
+	text-align: center;
+	font: bold 30px/50px 'Microsoft Yahei';
+	color: orange;
+	position: relative;
+}
+#header #operate{
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	width: 200px;
+	height: 50px;
+	font-weight: normal;
+	line-height: 50px;
+	font-size: 20px;
+	color: red;
+}
+#header #operate span{
+	cursor: pointer;
+	margin-right: 10px;
+}
+#header #operate span#products_cart{
+	padding-left: 20px;
+	background: url('../images/cart.png') no-repeat;
+	background-size: 20px 20px;
+	background-position: 0 5px;
+}
+#header #operate span#products_cart_number{
+	background: red;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 10px;
+	color: white;
+	line-height: 20px;
+	font-size:14px
+}
+
+#products{
+	width: 1000px;
+	margin: 0 auto;
+}
+#products ul li{
+	width: 25%;
+	float: left;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+#product{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.product-detail>div{
+	float: left;
+}
+.number-choose{
+	cursor: pointer;
+	-webkit-user-select: none;
+}
+input.number-input{
+	width: 20px;
+}
+.intoCart{
+	width:120px;
+	height: 50px;
+	background: #9abb82;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
+
+#car{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px
+}
+#car img{
+	width: 100px;
+	height: 100px;
+}
+#car li{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+.cart-operate{
+	height: 100px;
+	vertical-align: middle;
+	line-height: 100px;
+}
+.cart-operate .cart-sum{
+	line-height: 100px;
+}
+.cart-operate .cart-delete{
+	line-height: 50px;
+	margin: 0 50px;
+	margin-top: 25px;
+	height: 50px;
+	width: 100px;
+	background: #9abb82;
+	border-radius: 5px;
+	border: 0;
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+	outline: none;
+}
+
+#order{
+	width: 1000px;
+	margin: 0 auto;
+}
+.order-history{
+	margin-top: 10px;
+}
+.order-history li img{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+.order-history li{
+	padding-left: 10px;
+	padding-right: 10px;
+	clear: both;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.order-history-bottom{
+	border-bottom: 2px solid #ccc;
+}
+.order-history li span{
+	display: inline-block;
+	height: 100px;
+	float: left;
+	vertical-align: middle;
+	line-height: 100px;
+	margin-left: 20px;
+}
+.order-history li div{
+	float: right;
+	height: 100px;
+	line-height: 100px;
+}

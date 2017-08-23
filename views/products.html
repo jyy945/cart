@@ -1,0 +1,9 @@
+<div id = 'products'>
+	<ul>
+		<li ng-click = 'setProduct()' ng-repeat = 'product in products'>
+			<div><img ng-src = '{{product.imagefile}}' alt=""></div>
+			<p>{{product.description}}</p>
+		</li>
+		
+	</ul>
+</div>

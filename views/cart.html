@@ -1,0 +1,20 @@
+<div id="car">
+	<ul>
+		<li ng-repeat = 'cart in carts.cart'>
+			<div class = 'float-left'>
+				<img ng-src = '{{cart.product[0].imagefile}}' alt="" class = 'float-left'>
+				<span class = 'float-left'>{{cart.product[0].description}}</span>
+			</div>
+			<div class = 'float-right cart-operate'>
+				<span class = 'float-left cart-sum'> X {{cart.number}}</span>
+				<span class = 'float-left cart-sum' style = 'margin-left: 10px;'> {{cart.product[0].price * cart.number | currency}}</span>
+				<button class = 'float-left cart-delete' ng-click = 'productRemove()'>删除</button>
+			</div>
+		</li>
+	</ul>
+	<div class="clear"></div>
+	<div class = 'margin-top-20'>
+		<h2 ng-show = 'carts.cart.length == 0'>购物车空空如也</h2>
+		<p class = 'intoCart' ng-click = 'setOrder()' ng-show = 'carts.cart.length != 0'>确认付款</p>
+	</div>
+</div>
